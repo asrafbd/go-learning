@@ -17,7 +17,7 @@ type course struct {
 func main() {
 
 	fmt.Println("Welcome to Json api")
-	http.HandleFunc("/", Mycourse)
+	http.HandleFunc("/api", Mycourse)
 	http.ListenAndServe(":8080", nil)
 
 }
