@@ -1,1 +1,5 @@
-the is a context of new file
+the is a context of new file.
+This is new string
+This is new string
+This is new string
+This is new string
