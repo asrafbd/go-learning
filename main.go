@@ -8,8 +8,8 @@ func main() {
 	var name string = "Hello world !!"
 	fmt.Println(name)
 
-	employees := ["Hello"];
+	employees := []string{"Hello", "Hello"}
 
-	fmt.Println(employees[0])
+	fmt.Println(employees)
 
 }

@@ -15,6 +15,8 @@ func main() {
 	fmt.Println("2nd Method")
 	for i := range fruits {
 		fmt.Println(fruits[i])
+
 	}
+	fmt.Println(fruits)
 
 }
