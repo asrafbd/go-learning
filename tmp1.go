@@ -1,21 +1,34 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
-	myword := "MADAM"
+	var str string = "hello-Hello-6767"
+	var mystr strings.Builder
 
-	lastIdx := len(myword) - 1
+	for _, j := range str {
 
-	for i := 0; i < lastIdx/2; i++ {
+		if j >= 'a' && j <= 'z' {
 
-		if myword[i] != myword[lastIdx-i] {
+			ps := int(j - 'a' + 1)
 
-			fmt.Println(false)
+			mystr.WriteString(fmt.Sprintf("%d", ps))
+
+		} else if j >= 'A' && j <= 'Z' {
+
+			ps := int(j - 'A' + 1)
+
+			mystr.WriteString(fmt.Sprintf("%d", ps))
+		} else {
+
+			mystr.WriteRune(j)
 		}
 	}
-	fmt.Println(true)
-	fmt.Println(lastIdx)
+
+	fmt.Print(mystr.String())
 
 }
